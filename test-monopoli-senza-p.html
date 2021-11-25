@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/8421e0a315.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+
+  <div class="foto_bg_1 wrapper_foto">
+    <div id="overlay_vacanze" class="overlay">
+      <div class="overlay_vacanze_color overlay_text_center">
+      </div>
+      <div class="overlay_vacanze_grey overlay_text_center">
+        <h4>VACANZE</h4>
+        <i class="far fa-hand-pointer"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="foto_bg_2 wrapper_foto">
+    <div id="overlay_esperienze" class="overlay">
+      <div class="overlay_esperienze_color overlay_text_center">
+      </div>
+      <div class="overlay_esperienze_grey overlay_text_center">
+        <h4>ESPERIENZE</h4>
+        <i class="far fa-hand-pointer"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="foto_bg_3 wrapper_foto">
+    <div id="overlay_cultura" class="overlay">
+      <div class="overlay_cultura_color overlay_text_center">
+      </div>
+      <div class="overlay_cultura_grey overlay_text_center">
+        <h4>CULTURA</h4>
+        <i class="far fa-hand-pointer"></i>
+      </div>
+    </div></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>
+
+
+
+
+
+<style media="screen">
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper_foto {
+  position: relative;
+}
+
+.foto_bg_1 {
+  background-image: url('monopoli_test_img/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+
+.foto_bg_2 {
+  background-image: url('monopoli_test_img/2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+
+.foto_bg_3 {
+  background-image: url('monopoli_test_img/3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay_vacanze_color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  background: rgba(215,184,21, 0.5);
+  width: 20%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.overlay_esperienze_color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  background: rgba(13,120,189,0.5);
+  width: 10%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.overlay_cultura_color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  background: rgba(178, 105, 81, 0.5);
+  width: 15%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+
+.overlay_vacanze_grey {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: 1;
+  height: 100%;
+  background: rgba(2,2,2, 0.5);
+  width: 40%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.overlay_esperienze_grey {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 1;
+  height: 100%;
+  background: rgba(2,2,2, 0.5);
+  width: 40%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.overlay_cultura_grey {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  z-index: 1;
+  height: 100%;
+  background: rgba(2,2,2, 0.5);
+  width: 40%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.overlay_vacanze_color p, .overlay_esperienze_color p, .overlay_cultura_color p {
+  display: none;
+  padding: 4rem;
+  font-size: 1.5rem;
+}
+
+.overlay_text_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+
+
+</style>
+
+
+<script type="text/javascript">
+
+// FUNZIONANTE MA CON PROBLEMA TIMEOUT
+
+$("#overlay_vacanze").hover(function(){
+  $('.overlay_vacanze_grey').animate({ left: "60%" });
+  $('.overlay_vacanze_color').animate({ width: "60%" })
+}, function() {
+  $('.overlay_vacanze_grey').animate({ left: "17%" });
+  $('.overlay_vacanze_color').animate({ width: "17%" });
+});
+
+
+$("#overlay_esperienze").hover(function(){
+  $('.overlay_esperienze_grey').animate({ left: "60%" });
+  $('.overlay_esperienze_color').animate({ width: "60%" })
+}, function() {
+  $('.overlay_esperienze_grey').animate({ left: "20%" });
+  $('.overlay_esperienze_color').animate({ width: "20%" });
+});
+
+
+$("#overlay_cultura").hover(function(){
+  $('.overlay_cultura_grey').animate({ left: "60%" });
+  $('.overlay_cultura_color').animate({ width: "60%" })
+}, function() {
+  $('.overlay_cultura_grey').animate({ left: "15%"});
+  $('.overlay_cultura_color').animate({ width: "15%"});
+});
+
+
+
+
+
+
+
+
+</script>
